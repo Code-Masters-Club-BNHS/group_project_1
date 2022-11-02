@@ -7,5 +7,5 @@ Current Groups:
 
 | Group # |           Members           | Topic | Status |
 | --------- | :---------------------------: | ------- | -------- |
-| 1       | Josiah Snyder, Parker Allen | N/A   | - [ ]    |
-| 2       | Ashimt Banerjee, Ryan Dang | N/A   | - [ ]    |
+| 1       | Josiah Snyder, Parker Allen | N/A   | <ul><li>- [ ] </li></ul>    |
+| 2       | Ashimt Banerjee, Ryan Dang | N/A   | <ul><li>- [ ] </li></ul>  |
