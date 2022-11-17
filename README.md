@@ -6,5 +6,5 @@ Current Groups:
 
 | Group # |           Members           | Topic | Status |
 | --------- | :--------------------------- | ------- | -------- |
-| 1       | Josiah Snyder, Parker Allen | N/A   | <ul><li>- [ ] </li></ul>    |
-| 2       | Ashmit Banerjee, Ryan Dang | N/A   | <ul><li>- [ ] </li></ul>  |
+| 1       | Josiah Snyder, Parker Allen | Grade Database   | <ul><li>- [ ] </li></ul>    |
+| 2       | Ashmit Banerjee, Ryan Dang | UNO   | <ul><li>- [ ] </li></ul>  |
