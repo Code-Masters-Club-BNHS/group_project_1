@@ -1,0 +1,17 @@
+{
+    "students": [
+        {
+            "name": "",
+            "classes": [
+                {
+                    "class": {
+                        "grade": 0,
+                        "teacher": ""
+                    }
+                }
+            ],
+            "GPA": 0.0,
+            "rank": 0
+        }
+    ]
+}
