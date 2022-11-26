@@ -1,6 +1,7 @@
 import json
 import os
 
+
 class data_manager():
     def __init__(self, file_path):
         self.file_path = file_path
@@ -8,10 +9,10 @@ class data_manager():
     def __del__(self):
         try:
             self._close_file()
-        except:
+        finally:
             pass
 
-    def _open_file(self, mode = "r"):
+    def _open_file(self, mode="r"):
         self.file_ob = open(self.file_path, mode)
 
     def _close_file(self):
@@ -27,7 +28,7 @@ class data_manager():
         """directly wrights data to the file
         WARNING DATA WILL BE OVERWRITTEN AND MAY CAUSE PERMANENT DATA LOSS"""
 
-        json_data = json.dumps(data, indent = 4)
+        json_data = json.dumps(data, indent=4)
 
         self._open_file(mode="w")
         self.file_ob.write(json_data)
@@ -38,7 +39,7 @@ class data_manager():
         calculates gpa on a 4.0 scale
         """
         a = 0
-        b = 0 
+        b = 0
         c = 0
         d = 0
         f = 0
@@ -59,7 +60,7 @@ class data_manager():
             else:
                 f += 1
                 total_num += 1
-        total = (a * 4)+ (b * 3) + (c * 2) + d
+        total = (a * 4) + (b * 3) + (c * 2) + d
         gpa = total / total_num
         return gpa
 
@@ -89,9 +90,8 @@ class data_manager():
                 return i
 
 
-
 if __name__ == "__main__":
-    test_classes = [{"class_name": "english", "grade": 100, "teacher": "mrs.bitch"}]
+    test_classes = [{"class_name": "math", "grade": 100, "teacher": "mrs.bin"}]
 
     test = data_manager(os.path.join(".", "group_1", "data", "schema.json"))
     test.write_new_student("gaer", test_classes)
