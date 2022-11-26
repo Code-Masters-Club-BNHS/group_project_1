@@ -4,14 +4,12 @@
             "name": "",
             "classes": [
                 {
-                    "class": {
-                        "grade": 0,
-                        "teacher": ""
-                    }
+                    "class_name": "",
+                    "grade": 0,
+                    "teacher": ""
                 }
             ],
-            "GPA": 0.0,
-            "rank": 0
+            "GPA": 0.0
         }
     ]
 }
