@@ -89,10 +89,30 @@ class data_manager():
             if data["students"][i]["name"] == name:
                 return i
 
+    def student_data(self, name: str):
+        index = self.search_student_index(name)
 
-if __name__ == "__main__":
-    test_classes = [{"class_name": "math", "grade": 100, "teacher": "mrs.bin"}]
+        data = self._read_file()
+        student = data["students"][index]
+        return student
+
+
+def test_mod():
+    test_classes = [{"class_name": "math", "grade": 100, "teacher": "mrs.bin"},
+                    {"class_name": "hist", "grade": 100, "teacher": "mrs.bin"}]
 
     test = data_manager(os.path.join(".", "group_1", "data", "schema.json"))
     test.write_new_student("gaer", test_classes)
+    student_data = test.student_data("gaer")
+
+    if student_data["name"] != "gaer":
+        return False
+    elif student_data["GPA"] != 4.0:
+        return False
+
     test.remove_student("gaer")
+    return True
+
+
+if __name__ == "__main__":
+    test_mod()
