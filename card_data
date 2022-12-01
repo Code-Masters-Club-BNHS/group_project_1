@@ -1,0 +1,8 @@
+def skip(player):
+  
+def draw(player, number):
+  
+def reverse(player):
+  
+def wild(player, color):
+  
