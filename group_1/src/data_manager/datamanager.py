@@ -9,6 +9,8 @@ class data_manager():
     def __del__(self):
         try:
             self._close_file()
+        except:
+            pass
         finally:
             pass
 
@@ -101,7 +103,7 @@ def test_mod():
     test_classes = [{"class_name": "math", "grade": 100, "teacher": "mrs.bin"},
                     {"class_name": "hist", "grade": 100, "teacher": "mrs.bin"}]
 
-    test = data_manager(os.path.join(".", "group_1", "data", "schema.json"))
+    test = data_manager(os.path.join(".", "group_1", "data", "test_data.json"))
     test.write_new_student("gaer", test_classes)
     student_data = test.student_data("gaer")
 
